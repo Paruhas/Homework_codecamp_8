@@ -13,6 +13,9 @@
             padding: 0;
             font-family: merriweather , sans-serif;
         }
+        body {
+            background-color: #f0f2f5;
+        }
         .box1 {
             position: fixed;
             display: flex;
@@ -36,19 +39,19 @@
             height: auto;
             /* border-style: solid; */
             margin: 10px;
+            padding-bottom: 100px;
             
         }
         .inbox2 {
-            /* background-color: lightgreen; */
+            background-color: rgb(255, 255, 255);
             margin-right: 0;
             padding-right: 32px;
             width: 400px;
             height: 320px;
-            border: 1px solid;
+            border: 0.25px solid rgba(0, 0, 0, 0.2);
             border-radius: 10px;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         }
-
         .inbox1-1 {
             padding: 10px;
             font-size: 2rem;
@@ -63,6 +66,11 @@
             font-weight: bold;
             font-size: 18px;
         }
+        .inbox2-5 {
+            justify-content: center;
+            text-align: center;
+            width: inherit;
+        }
         .inbox2-6 {
             border-bottom: 1px solid gray;
             align-items: center;
@@ -72,6 +80,7 @@
         }
         .inbox2-7 {
             padding-top: 10px;
+            padding-left: 10px;
         }
        
         @media (max-width: 1075px) {
@@ -85,9 +94,13 @@
         @media (max-width: 900px) {
             .box1 {
                 flex-direction: column;
+                justify-content: end;
+            }
+            .inbox1 {
+                padding-bottom: 0px;
             }
             .inbox1-1 {
-                position:relative;
+                /* position:relative; */
                 left: 22px;
             }
             .inbox1-2 {
@@ -104,12 +117,14 @@
             border-radius: 6px;
             padding: 10px 10px;
             margin: 15px;
+            border: 0.25px solid rgba(0, 0, 0, 0.2);
         }
         .Password {
             width: 100%;
             border-radius: 6px;
             padding: 10px 10px;
             margin: 0px 15px;
+            border: 0.25px solid rgba(0, 0, 0, 0.2);
         }
 
         .LI {
@@ -120,12 +135,14 @@
             width:252px;
             border-radius: 6px;
             margin: 10px 15px;
-            width: 360px;
+            width: 365px;
             height: 50px;
+            border: 0.25px solid rgba(0, 0, 0, 0.2);
         }
         .ForPass {
             text-decoration: none;
-            position: relative;
+            justify-content: center;
+            text-align: center;
             left: 130px;
         }
         .CNA {
@@ -138,8 +155,22 @@
             margin: 0px 100px;
             width: 180px;
             height: 50px;
+            border: 0.25px solid rgba(0, 0, 0, 0.2);
             
         }
+        p {
+            padding-top: 20px;
+            display:flex;
+            width: auto;
+            height: auto;
+            justify-content: center;
+        }
+        .pa {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        
 
         .inbox2:hover {
         /* background-color: blue; */
@@ -189,6 +220,7 @@
                 Facebook ช่วยคุณเชื่อมต่อและแชร์กับผู้คนมากมายรอบตัวคุณ
             </div>
         </div>
+    <div>  
         <div class="inbox2">
             <div class="inbox2-1">
                 <input type="text" name="" id="" placeholder="Email address or phone number" class="Email">
@@ -217,7 +249,13 @@
                     Create New Account
                 </button> 
             </div>
+            
         </div>
+        <p><a href='#' class="pa">สร้างเพจ</a>สำหรับบุคคลมีชื่อเสียง วงดนตรี หรือธุรกิจ</p>
+    </div>
+        
+
+        
     </div>
 </body>
 </html>
