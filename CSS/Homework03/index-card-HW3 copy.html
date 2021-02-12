@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=d, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: merriweather , sans-serif;
+        }
+        .box1 {
+            position: fixed;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 100vw;
+            height: 100vh;
+            /* background-color: rgb(208, 208, 208); */
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            
+        }
+        .inbox1 {
+            /* background-color: lightblue; */
+            margin-right: 0;
+            padding-right: 32px;
+            width: 400px;
+            height: auto;
+            /* border-style: solid; */
+            margin: 10px;
+            
+        }
+        .inbox2 {
+            /* background-color: lightgreen; */
+            margin-right: 0;
+            padding-right: 32px;
+            width: 400px;
+            height: 320px;
+            border: 1px solid;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .inbox1-1 {
+            padding: 10px;
+            font-size: 2rem;
+            position:relative;
+            left: -35px;
+        }
+
+        .inbox1-2 {
+            position: relative;
+            top: -40px;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .inbox2-6 {
+            border-bottom: 1px solid gray;
+            align-items: center;
+            width: 360px;
+            margin: 10px 16px;
+            padding-bottom: 10px;
+        }
+        .inbox2-7 {
+            padding-top: 10px;
+        }
+       
+        @media (max-width: 1075px) {
+            .inbox1-2 {
+                font-weight: blod;
+                font-size: 18px;
+                width: 300px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .box1 {
+                flex-direction: column;
+            }
+            .inbox1-1 {
+                position:relative;
+                left: 22px;
+            }
+            .inbox1-2 {
+                left: 0px;
+                font-weight: lighter;
+                font-size: 24px;
+                width: 400px;
+                text-align: center;
+            }
+        }
+
+        .Email {
+            width: 100%;
+            border-radius: 6px;
+            padding: 10px 10px;
+            margin: 15px;
+        }
+        .Password {
+            width: 100%;
+            border-radius: 6px;
+            padding: 10px 10px;
+            margin: 0px 15px;
+        }
+
+        .LI {
+            background-color: #1877f2;
+            text-align: center;
+            padding: 8px 0px;
+            color: white;
+            width:252px;
+            border-radius: 6px;
+            margin: 10px 15px;
+            width: 360px;
+            height: 50px;
+        }
+        .ForPass {
+            text-decoration: none;
+            position: relative;
+            left: 130px;
+        }
+        .CNA {
+            background-color: #42b72a;
+            text-align: center;
+            padding: 8px 0px;
+            color: white;
+            width:252px;
+            border-radius: 6px;
+            margin: 0px 100px;
+            width: 180px;
+            height: 50px;
+            
+        }
+
+        .inbox2:hover {
+        /* background-color: blue; */
+        animation: fly 2s 0s 1 ;
+        }
+
+        /* @keyframes fly {
+        0% {
+            transform: rotate(0deg);
+        }
+        20% {
+            transform: rotate(900deg);
+        }
+        95% {
+            transform: translateX(5000px);
+            animation-play-state:paused;
+        }
+        } */
+
+        .LI:active {
+            background-color: #0f4791;
+        }
+        
+        .CNA:active {
+            background-color: #30821f;
+        }
+
+        .Email:focus {
+            border: 2px solid #1877f2;
+        }
+
+        .Password:focus {
+            border: 2px solid #1877f2;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="inbox1">
+            <div class="inbox1-1">
+                <!-- FACEBOOK -->
+                <img src="./FB-name.svg" alt="">
+            </div>
+            <div class="inbox1-2">
+                Facebook ช่วยคุณเชื่อมต่อและแชร์กับผู้คนมากมายรอบตัวคุณ
+            </div>
+        </div>
+        <div class="inbox2">
+            <div class="inbox2-1">
+                <input type="text" name="" id="" placeholder="Email address or phone number" class="Email">
+            </div>
+            <div class="inbox2-2">
+                <input type="password" name="" id="" placeholder="Password" class="Password">
+            </div>
+            <div class="inbox2-3">
+                <button class="LI">
+                    Log in
+                </button>
+            </div>
+            <div class="inbox2-4">
+                
+            </div>
+            <div class="inbox2-5">
+                <a href="#" class="ForPass">
+                    Forgotten password?
+                </a>
+            </div>            
+            <div class="inbox2-6">
+                
+            </div>
+            <div class="inbox2-7">
+                <button class="CNA">
+                    Create New Account
+                </button> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
