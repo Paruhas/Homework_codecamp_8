@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+
+    <script>
+
+//exercise21
+function draw(n) {
+    let c = n
+    for (j=1 ; j<=n ; j++) {
+        let a = ''
+        c = c-2
+        for (i=1 ; i<=n+n-1 ; i++) {
+            z = i-j
+            if ( z < n && z > c ) {
+                b = '*'
+            } else {
+                b = '_'
+            }
+                a = a + b
+        }
+        console.log(a)
+    }
+}
+
+draw(4)
+
+
+
+
+    </script>
+
+
+</body>
+</html>

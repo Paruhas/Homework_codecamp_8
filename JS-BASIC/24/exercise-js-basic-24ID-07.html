@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+
+    <script>
+
+
+//exercise07 (3*n)-(i+7)
+function draw(n) {
+    let star = '';
+    for ( let j = n; j-1 >= 0; j-- ) {
+        for ( let i = n; i-1 >= 0; i-- ) {
+            star = star + ((j*n)-(n-i));
+        }
+        star = star  + '\n';
+    }   
+    console.log(star)   
+}
+
+draw(3) // 987 654 321 
+
+
+
+    </script>
+
+
+</body>
+</html>
