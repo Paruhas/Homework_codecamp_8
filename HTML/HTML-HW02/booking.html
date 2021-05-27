@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking</title>
+  </head>
+  <body>
+    <form
+      style="
+        border: solid 1px black;
+        border-radius: 15px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      "
+    >
+      <div>
+        <div style="padding: 0px 30px 20px">
+          <div style="display: flex">
+            <div style="width: 50%; min-width: max-content">
+              <p>Flying from</p>
+              <select style="width: 200px">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+            <div style="width: 50%; min-width: max-content">
+              <p>To</p>
+              <select style="width: 200px">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+          </div>
+          <div style="display: flex">
+            <div style="width: 50%; min-width: max-content">
+              <p>Departing</p>
+              <input type="date" value="2016-03-01" disabled />
+            </div>
+            <div style="width: 50%; min-width: max-content">
+              <p>Returning</p>
+              <input type="date" />
+            </div>
+          </div>
+          <div style="display: flex">
+            <div style="width: 25%; min-width: max-content">
+              <p>Adult</p>
+              <input type="number" style="width: 50px" maxlength="2" />
+            </div>
+            <div style="width: 25%; min-width: max-content">
+              <p>Child</p>
+              <input type="number" style="width: 50px" maxlength="2" />
+            </div>
+            <div style="width: 25%; min-width: max-content">
+              <p>Infant</p>
+              <input type="number" style="width: 50px" maxlength="2" />
+            </div>
+            <div style="width: 25%; min-width: max-content">
+              <p>Currency</p>
+              <select style="width: 50px">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 20px 0px; background-color: gray">
+          <button
+            style="
+              padding: 10px;
+              margin-left: 30px;
+              border: none;
+              background-color: orange;
+              outline: none;
+              border-radius: 5px;
+            "
+          >
+            SEARCH
+          </button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
