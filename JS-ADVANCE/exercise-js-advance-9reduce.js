@@ -883,42 +883,42 @@ const sales = [
 
 // // 8. เรียงยอดขายของแต่ละรุ่นจากมากไปน้อย
 
-// const ans8_beforeSort = sales.reduce((acc, item, index) => {
-//   // console.log(item.product.model);
-//   //   console.log(
-//   //     item.discount
-//   //       ? item.product.unitPrice - item.product.unitPrice * item.discount
-//   //       : item.product.unitPrice
-//   //   );
+const ans8_beforeSort = sales.reduce((acc, item, index) => {
+  // console.log(item.product.model);
+  //   console.log(
+  //     item.discount
+  //       ? item.product.unitPrice - item.product.unitPrice * item.discount
+  //       : item.product.unitPrice
+  //   );
 
-//   if (acc[item.product.model]) {
-//     acc[item.product.model] =
-//       acc[item.product.model] +
-//       (item.discount
-//         ? item.product.unitPrice - item.product.unitPrice * item.discount
-//         : item.product.unitPrice);
-//   }
+  if (acc[item.product.model]) {
+    acc[item.product.model] =
+      acc[item.product.model] +
+      (item.discount
+        ? item.product.unitPrice - item.product.unitPrice * item.discount
+        : item.product.unitPrice);
+  }
 
-//   if (!acc[item.product.model]) {
-//     acc[item.product.model] = item.discount
-//       ? item.product.unitPrice - item.product.unitPrice * item.discount
-//       : item.product.unitPrice;
-//   }
+  if (!acc[item.product.model]) {
+    acc[item.product.model] = item.discount
+      ? item.product.unitPrice - item.product.unitPrice * item.discount
+      : item.product.unitPrice;
+  }
 
-//   return acc;
-// }, {});
-// console.log(ans8_beforeSort);
+  return acc;
+}, {});
+console.log(ans8_beforeSort);
 
-// var ans8 = [];
-// for (var item in ans8_beforeSort) {
-//   ans8.push([item, ans8_beforeSort[item]]);
-// }
+var ans8 = [];
+for (var item in ans8_beforeSort) {
+  ans8.push([item, ans8_beforeSort[item]]);
+}
 
-// ans8.sort(function (a, b) {
-//   return a[1] - b[1];
-// });
+ans8.sort(function (a, b) {
+  return a[1] - b[1];
+});
 
-// console.log(ans8, "ans8");
+console.log(ans8, "ans8");
 
 // // =================================================
 
